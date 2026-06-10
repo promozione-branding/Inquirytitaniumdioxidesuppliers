@@ -32,7 +32,7 @@ const Hero = () => {
     <div className="absolute bottom-5 left-22 hidden md:block">
       <Dialog>
         
-          <a href="https://wa.me/918527557778?text=Hello,%20I%E2%80%99m%20interested%20in%20Titanium%20Dioxide,%20please%20share%20price,%20MOQ,%20and%20delivery%20details." className="bg-[#FFCC2E] px-10 py-3 rounded-md text-lg font-semibold hover:bg-yellow-400 transition">
+          <a target="_blank" href="https://wa.link/5kb0kl" className="bg-[#FFCC2E] px-10 py-3 rounded-md text-lg font-semibold hover:bg-yellow-400 transition">
             Connect with Expert Now
 
             </a>
@@ -137,7 +137,7 @@ const Hero = () => {
 
             {/* Right Button */}
             <a
-              href="https://wa.me/918527557778?text=hey%20i%20want%20your%20service"
+              href="https://wa.link/5kb0kl"
               className="bg-[#FFCC2E] px-6 py-3 text-black font-bold rounded-tl-2xl rounded-br-2xl hover:bg-yellow-400 transition"
             >
               Connect Now

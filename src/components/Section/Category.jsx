@@ -23,13 +23,11 @@ export default function Category() {
                         />
                         <Dialog>
                             <DialogTrigger asChild>
-                                <button className="bg-[#FFCC2E] px-5 py-2 rounded-md font-medium hover:bg-yellow-400 transition">
+                                <a href="https://wa.link/5kb0kl" className="bg-[#FFCC2E] px-5 py-2 rounded-md font-medium hover:bg-yellow-400 transition">
                                     Titanium Dioxide
-                                </button>
+                                </a>
                             </DialogTrigger>
-                            <DialogContent className="m-0 p-0 bg-white border-none rounded-md">
-                                <Form />
-                            </DialogContent>
+                             
                         </Dialog>
                     </div>
 
@@ -44,13 +42,11 @@ export default function Category() {
                         />
                         <Dialog>
                             <DialogTrigger asChild>
-                                <button className="bg-[#FFCC2E] px-5 py-2 rounded-md font-medium hover:bg-yellow-400 transition">
+                                <a href="https://wa.link/5kb0kl" className="bg-[#FFCC2E] px-5 py-2 rounded-md font-medium hover:bg-yellow-400 transition">
                                     Lithopone
-                                </button>
+                                </a>
                             </DialogTrigger>
-                            <DialogContent className="m-0 p-0 bg-white border-none rounded-md">
-                                <Form />
-                            </DialogContent>
+                             
                         </Dialog>
                     </div>
 
@@ -65,13 +61,11 @@ export default function Category() {
                         />
                         <Dialog>
                             <DialogTrigger asChild>
-                                <button className="bg-[#FFCC2E] px-5 py-2 rounded-md font-medium hover:bg-yellow-400 transition">
+                                <a href="https://wa.link/5kb0kl" className="bg-[#FFCC2E] px-5 py-2 rounded-md font-medium hover:bg-yellow-400 transition">
                                     T Dio. Rutile
-                                </button>
+                                </a>
                             </DialogTrigger>
-                            <DialogContent className="m-0 p-0 bg-white border-none rounded-md">
-                                <Form />
-                            </DialogContent>
+                             
                         </Dialog>
                     </div>
 
@@ -86,13 +80,11 @@ export default function Category() {
                         />
                         <Dialog>
                             <DialogTrigger asChild>
-                                <button className="bg-[#FFCC2E] px-5 py-2 rounded-md font-medium hover:bg-yellow-400 transition">
+                                <a href="https://wa.link/5kb0kl" className="bg-[#FFCC2E] px-5 py-2 rounded-md font-medium hover:bg-yellow-400 transition">
                                     Caustic Soda
-                                </button>
+                                </a>
                             </DialogTrigger>
-                            <DialogContent className="m-0 p-0 bg-white border-none rounded-md">
-                                <Form />
-                            </DialogContent>
+                             
                         </Dialog>
                     </div>
                 </div>

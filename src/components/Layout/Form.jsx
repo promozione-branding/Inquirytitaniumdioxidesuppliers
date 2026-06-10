@@ -124,8 +124,8 @@ const Form = () => {
         onSubmit={handleSubmit}
         className="bg-[#4c608b] h-full px-5 py-6"
       >
-        <p className="text-xl md:text-3xl mb-2 font-bold text-white text-center">
-          Get Wholesale Price Today!
+        <p className="text-xl md:text-[28px] mb-2 font-bold text-white text-center">
+          Get Factory-Direct Price List!
         </p>
 
         <input type="hidden" name="_nosponsor" value="true" />

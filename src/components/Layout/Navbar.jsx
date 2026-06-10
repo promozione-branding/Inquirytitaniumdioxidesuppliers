@@ -37,7 +37,8 @@ const Navbar = () => {
 
         {/* Desktop WhatsApp */}
         <a
-          href="https://wa.me/918527557778"
+        target="_blank"
+         href="https://wa.link/5kb0kl"
           className="hidden md:block w-40"
         >
           <Image
@@ -51,7 +52,9 @@ const Navbar = () => {
         {/* Mobile Menu */}
         <div className="md:hidden flex items-center gap-3">
           <a
-            href="https://wa.me/918527557778?text=hey%20i%20want%20your%20service"
+              target="_blank"
+
+            href="https://wa.link/5kb0kl"
             className="w-25"
           >
             <Image

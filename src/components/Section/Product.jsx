@@ -34,14 +34,12 @@ export default function Product() {
                         </p>
 
                         <Dialog>
-                            <DialogTrigger asChild>
-                                <button className="bg-[#FFCC2E] px-5 py-2 rounded-md font-medium hover:bg-yellow-400 transition">
+                            
+                                <a href="https://wa.link/5kb0kl" className="bg-[#FFCC2E] px-5 py-2 rounded-md font-medium hover:bg-yellow-400 transition">
                                     Get Best Price
-                                </button>
-                            </DialogTrigger>
-                            <DialogContent className="m-0 p-0 bg-white border-none rounded-md">
-                                <Form />
-                            </DialogContent>
+                                </a>
+                            
+                            
                         </Dialog>
                     </div>
                 ))}
@@ -49,14 +47,12 @@ export default function Product() {
 
             <div className="flex justify-center mt-4">
                 <Dialog>
-                    <DialogTrigger asChild>
-                        <button className="bg-yellow-500 px-5 py-2 rounded-md font-medium hover:bg-yellow-600 text-black transition">
+                   
+                        <a href="https://wa.link/5kb0kl" className="bg-yellow-500 px-5 py-2 rounded-md font-medium hover:bg-yellow-600 text-black transition">
                             Get Free Quote & Sample
-                        </button>
-                    </DialogTrigger>
-                    <DialogContent className="m-0 p-0 bg-transparent border-none">
-                        <Form />
-                    </DialogContent>
+                        </a>
+                    
+                    
                 </Dialog>
             </div>
         </section>
