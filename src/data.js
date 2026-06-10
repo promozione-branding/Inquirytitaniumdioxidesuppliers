@@ -78,18 +78,18 @@ export const productDetails =[
         title:"Rubber Industry"
     },
 
-    {
-        img:"/image/pharmaceutical.png",
-        title:"Pharmaceutical Industry"
-    },
-    {
-        img:"/image/concrete-mixer.png",
-        title:"Cement Industry"
-    },
-    {
-        img:"/image/oil.png",
-        title:"Oil & Gas"
-    },
+    // {
+    //     img:"/image/pharmaceutical.png",
+    //     title:"Pharmaceutical Industry"
+    // },
+    // {
+    //     img:"/image/concrete-mixer.png",
+    //     title:"Cement Industry"
+    // },
+    // {
+    //     img:"/image/oil.png",
+    //     title:"Oil & Gas"
+    // },
   ]
 
   export const whyChooseUs =[

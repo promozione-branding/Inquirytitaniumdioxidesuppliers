@@ -15,66 +15,75 @@ import {
 
 const Navbar = () => {
   return (
-    <div className=" w-full z-20 sticky top-0 bg-white flex justify-around items-center border-b-4 border-yellow-400 py-3 px-2">
-      <div className="flex flex-col items-left ">
-        <Image src={"/image/aanaya.webp"} width={70} height={70} alt="logo" />
-        <p className="text-[13px] text-left font-medium">GSTIN- <br/> 07EHWPA7648D1ZZ</p>
+    <div className="w-full sticky top-0 z-20 bg-white border-b-4 border-yellow-400">
+      <div className="max-w-7xl mx-auto flex items-center justify-between md:p-0 px-2 py-2">
+        {/* Logo + GST */}
+        <div className="flex items-center md:gap-2">
+          <Image src="/image/aanaya.webp" width={100} height={60} alt="logo" />
+          <p className="md:text-sm text-xs font-medium leading-tight">
+            GSTIN- <br /> 07EHWPA7648D1ZZ
+          </p>
+        </div>
+
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex items-center gap-8 font-medium text-lg">
+          <Link href="/" className="hover:text-yellow-600">Home</Link>
+          <Link href="#about" className="hover:text-yellow-600">About Us</Link>
+          <Link href="#products" className="hover:text-yellow-600">Products</Link>
+          <Link href="#certification" className="hover:text-yellow-600">
+            Certification
+          </Link>
+        </div>
+
+        {/* Desktop WhatsApp */}
+        <a
+          href="https://wa.me/918527557778"
+          className="hidden md:block w-40"
+        >
+          <Image
+            src="/image/whatsapp-button-2.webp"
+            width={400}
+            height={120}
+            alt="whatsapp-call"
+          />
+        </a>
+
+        {/* Mobile Menu */}
+        <div className="md:hidden flex items-center gap-3">
+          <a
+            href="https://wa.me/918527557778?text=hey%20i%20want%20your%20service"
+            className="w-25"
+          >
+            <Image
+              src="/image/whatsapp-button-2.webp"
+              width={100}
+              height={100}
+              alt="whatsapp"
+              className="h-10"
+            />
+          </a>
+
+          <Sheet>
+            <SheetTrigger asChild>
+              <button className="bg-gray-200 p-2 rounded-md">
+                <Menu />
+              </button>
+            </SheetTrigger>
+
+            <SheetContent side="top">
+              <div className="flex flex-col items-center space-y-4 py-6 text-lg">
+                <Link href="/" className="hover:text-yellow-600">Home</Link>
+                <Link href="#about" className="hover:text-yellow-600">About Us</Link>
+                <Link href="#products" className="hover:text-yellow-600">Products</Link>
+                <Link href="#certification" className="hover:text-yellow-600">
+                  Certification
+                </Link>
+              </div>
+            </SheetContent>
+          </Sheet>
+        </div>
+
       </div>
-
-      <Sheet>
-        <SheetTrigger asChild>
-          <span className="bg-gray-200 p-1">
-            <Menu />
-          </span>
-        </SheetTrigger>
-        <SheetContent side="top">
-          <SheetHeader className={"hidden"}>
-            <SheetTitle>Edit profile</SheetTitle>
-            <SheetDescription>
-              Make changes to your profile here. Click save when you&apos;re
-              done.
-            </SheetDescription>
-          </SheetHeader>
-          <div className="flex flex-col items-center space-y-3 py-5">
-            <Link
-              href="/"
-              className="hover:bg-yellow-600 w-full flex items-center justify-center "
-            >
-              Home
-            </Link>
-            <Link
-              href="#about"
-              className="hover:bg-yellow-600 w-full flex items-center justify-center "
-            >
-              About Us
-            </Link>
-            <Link
-              href="#products"
-              className="hover:bg-yellow-600 w-full flex items-center justify-center "
-            >
-              Products
-            </Link>
-            <Link
-              href="#certification"
-              className="hover:bg-yellow-600 w-full flex items-center justify-center "
-            >
-              certification
-            </Link>
-          </div>
-        </SheetContent>
-      </Sheet>
-
-      <a
-        href="https://wa.me/918527557778?text=hey%20i%20want%20your%20service"
-        className="w-1/3 h-auto"
-      >
-        <Image
-          src={"/image/whatsapp-button-2.webp"}
-          width={400}
-          height={400}
-          alt="whatsapp-call"
-        />
-      </a>
     </div>
   );
 };

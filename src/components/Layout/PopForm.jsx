@@ -57,7 +57,7 @@ const PopForm = () => {
     }
   };
   return (
-    <div className=" px-1 ">
+    <div className="px-1">
       <form
         onSubmit={handleSubmit}
         className="bg-yellow-600 px-5 py-4 rounded-tl-4xl rounded-br-4xl mt-14"

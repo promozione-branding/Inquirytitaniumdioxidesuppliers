@@ -5,7 +5,8 @@ const Whatsapp = () => {
   return (
     <>
       <a
-        href="https://wa.me/918527557778?text=hey%20i%20want%20your%20service"
+        href="https://wa.me/918527557778"
+        
         className="fixed bottom-7 right-7 z-20"
       >
         <Image
@@ -18,7 +19,7 @@ const Whatsapp = () => {
       </a>
       <a
         href="tel:+918527557778"
-        className="fixed bottom-4 left-7 z-20"
+        className="fixed bottom-3 left-3 z-20"
       >
         <Image
           src="/image/call.png"
