@@ -5,7 +5,7 @@ const Whatsapp = () => {
   return (
     <>
       <a
-        href="https://wa.me/918527557778"
+        href="https://wa.link/5kb0kl"
         
         className="fixed bottom-7 right-7 z-20"
       >

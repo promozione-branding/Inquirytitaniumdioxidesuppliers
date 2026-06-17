@@ -17,7 +17,6 @@ const Hero = () => {
   style={{ backgroundImage: "url('/sdc.webp')" }}
 >
   {/* Overlay */}
-  <div className="absolute inset-0 bg-white/30" />
 
   <div className="relative h-screen px-4 md:px-10">
 
