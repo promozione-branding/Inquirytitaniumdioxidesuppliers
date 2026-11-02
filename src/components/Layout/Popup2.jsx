@@ -26,6 +26,7 @@ export default function Popup2({setOpen}) {
     try {
       const formData = {
         platform: "Titanium Dioxide Supplier Landing page",
+         supplierToken: "6a19599b79a7cd6dff26a4c5",
         platformEmail: "sales@aanyaenterprise.com",
         name,
         phone,

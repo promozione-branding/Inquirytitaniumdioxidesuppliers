@@ -20,6 +20,7 @@ const Form = () => {
     try {
       const formData = {
         platform: "Titanium Dioxide Supplier Landing page",
+        supplierToken: "6a19599b79a7cd6dff26a4c5",
         platformEmail: "sales@aanyaenterprise.com",
         name,
         phone,
@@ -29,7 +30,7 @@ const Form = () => {
       };
       const { data } = await axios.post(
         "https://brandbnalo.com/api/form/add",
-        formData
+        formData,
       );
 
       if (data?.success) {
@@ -43,7 +44,7 @@ const Form = () => {
         // Prepare WhatsApp message using payload object keys for clean access
         const whatsappText = `Hi, I am ${name}.\n \nEmail: ${email}\n\nMessage: ${message}\n\nContact: ${phone} \n `;
         const waUrl = `https://wa.me/918826544443?text=${encodeURIComponent(
-          whatsappText
+          whatsappText,
         )}`;
 
         // Delay WhatsApp redirect by 1 second to show success message
@@ -120,10 +121,7 @@ const Form = () => {
 
   return (
     <div className="h-full">
-      <form
-        onSubmit={handleSubmit}
-        className="bg-[#4c608b] h-full px-5 py-6"
-      >
+      <form onSubmit={handleSubmit} className="bg-[#4c608b] h-full px-5 py-6">
         <p className="text-xl md:text-[28px] mb-2 font-bold text-white text-center">
           Get Factory-Direct Price List!
         </p>
@@ -188,12 +186,13 @@ const Form = () => {
 
         {status && (
           <p
-            className={`text-center mt-4 text-sm font-medium p-3 rounded-lg ${status.startsWith("✅")
-              ? "bg-green-100 text-green-800"
-              : status.startsWith("❌")
-                ? "bg-red-100 text-red-800"
-                : "bg-yellow-100 text-yellow-800"
-              }`}
+            className={`text-center mt-4 text-sm font-medium p-3 rounded-lg ${
+              status.startsWith("✅")
+                ? "bg-green-100 text-green-800"
+                : status.startsWith("❌")
+                  ? "bg-red-100 text-red-800"
+                  : "bg-yellow-100 text-yellow-800"
+            }`}
           >
             {status}
           </p>

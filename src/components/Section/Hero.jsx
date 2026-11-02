@@ -31,7 +31,7 @@ const Hero = () => {
     <div className="absolute bottom-5 left-22 hidden md:block">
       <Dialog>
         
-          <a target="_blank" href="https://wa.link/5kb0kl" className="bg-[#FFCC2E] px-10 py-3 rounded-md text-lg font-semibold hover:bg-yellow-400 transition">
+          <a target="_blank"  href="https://wa.me/8527557778" className="bg-[#FFCC2E] px-10 py-3 rounded-md text-lg font-semibold hover:bg-yellow-400 transition">
             Connect with Expert Now
 
             </a>
@@ -136,7 +136,7 @@ const Hero = () => {
 
             {/* Right Button */}
             <a
-              href="https://wa.link/5kb0kl"
+              href="https://wa.me/8527557778"
               className="bg-[#FFCC2E] px-6 py-3 text-black font-bold rounded-tl-2xl rounded-br-2xl hover:bg-yellow-400 transition"
             >
               Connect Now

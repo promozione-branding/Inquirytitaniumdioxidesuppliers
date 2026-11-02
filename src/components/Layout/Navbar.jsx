@@ -38,7 +38,7 @@ const Navbar = () => {
         {/* Desktop WhatsApp */}
         <a
         target="_blank"
-         href="https://wa.link/5kb0kl"
+         href="https://wa.me/8527557778"
           className="hidden md:block w-40"
         >
           <Image
@@ -54,7 +54,7 @@ const Navbar = () => {
           <a
               target="_blank"
 
-            href="https://wa.link/5kb0kl"
+           href="https://wa.me/8527557778"
             className="w-25"
           >
             <Image
