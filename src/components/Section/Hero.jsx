@@ -122,7 +122,7 @@ const Hero = () => {
                 href="https://titaniumdioxidesuppliers.com/titanium-dioxide-supplier-in-india/"
                 className="font-bold underline text-lg"
               >
-                Largest Titanium Dioxide Supplier in India
+                Prices are moving daily after new duty. Book your quantity now and lock todays rate.
               </a>
 
               <p className="text-yellow-500 font-bold text-3xl my-1">
