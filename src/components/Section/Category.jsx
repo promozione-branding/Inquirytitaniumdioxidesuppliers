@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import { Dialog, DialogContent, DialogTrigger } from "../ui/dialog";
 import Form from '../Layout/Form';
 import Popup2 from '../Layout/Popup2';
+import { handleWhatsappClick } from '@/lib/track';
 
 
 export default function Category() {
@@ -33,6 +34,7 @@ export default function Category() {
               rel="noopener noreferrer"
               onClick={(e) => {
                 e.stopPropagation();
+                handleWhatsappClick();
               }}  href="https://wa.me/8527557778" className="bg-[#FFCC2E] px-5 py-2 rounded-md font-medium hover:bg-yellow-400 transition">
                                     Titanium Dioxide
                                 </a>
@@ -56,6 +58,7 @@ export default function Category() {
               rel="noopener noreferrer"
               onClick={(e) => {
                 e.stopPropagation();
+                handleWhatsappClick();
               }}  href="https://wa.me/8527557778" className="bg-[#FFCC2E] px-5 py-2 rounded-md font-medium hover:bg-yellow-400 transition">
                                     Lithopone
                                 </a>
@@ -79,6 +82,7 @@ export default function Category() {
               rel="noopener noreferrer"
               onClick={(e) => {
                 e.stopPropagation();
+                handleWhatsappClick();
               }} href="https://wa.me/8527557778" className="bg-[#FFCC2E] px-5 py-2 rounded-md font-medium hover:bg-yellow-400 transition">
                                     T Dio. Rutile
                                 </a>
@@ -102,6 +106,7 @@ export default function Category() {
               rel="noopener noreferrer"
               onClick={(e) => {
                 e.stopPropagation();
+                handleWhatsappClick();
               }}  href="https://wa.me/8527557778" className="bg-[#FFCC2E] px-5 py-2 rounded-md font-medium hover:bg-yellow-400 transition">
                                     Caustic Soda
                                 </a>

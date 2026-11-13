@@ -12,6 +12,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { handleWhatsappClick } from "@/lib/track";
 
 const Navbar = () => {
   return (
@@ -40,6 +41,9 @@ const Navbar = () => {
         target="_blank"
          href="https://wa.me/8527557778"
           className="hidden md:block w-40"
+          onClick={()=>{
+            handleWhatsappClick()
+          }}
         >
           <Image
             src="/image/whatsapp-button-2.webp"
@@ -56,6 +60,9 @@ const Navbar = () => {
 
            href="https://wa.me/8527557778"
             className="w-25"
+            onClick={()=>{
+            handleWhatsappClick()
+          }}
           >
             <Image
               src="/image/whatsapp-button-2.webp"

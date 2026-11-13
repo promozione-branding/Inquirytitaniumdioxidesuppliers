@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Form from "../Layout/Form";
 import Image from "next/image";
@@ -9,6 +10,7 @@ import Industry from "./Industry";
 import WhyUs from "./WhyUs";
 import { ShieldCheck, PackageCheck, MessageCircleReply } from "lucide-react";
 import Link from "next/link";
+import { handleWhatsappClick } from "@/lib/track";
 const Hero = () => {
   return (
     <div className="">
@@ -31,7 +33,9 @@ const Hero = () => {
     <div className="absolute bottom-5 left-22 hidden md:block">
       <Dialog>
         
-          <a target="_blank"  href="https://wa.me/8527557778" className="bg-[#FFCC2E] px-10 py-3 rounded-md text-lg font-semibold hover:bg-yellow-400 transition">
+          <a onClick={()=>{
+            handleWhatsappClick()
+          }} target="_blank"  href="https://wa.me/8527557778" className="bg-[#FFCC2E] px-10 py-3 rounded-md text-lg font-semibold hover:bg-yellow-400 transition">
             Connect with Expert Now
 
             </a>
@@ -136,6 +140,10 @@ const Hero = () => {
 
             {/* Right Button */}
             <a
+            onClick={()=>{
+            handleWhatsappClick()
+          }}
+              target="_blank"
               href="https://wa.me/8527557778"
               className="bg-[#FFCC2E] px-6 py-3 text-black font-bold rounded-tl-2xl rounded-br-2xl hover:bg-yellow-400 transition"
             >

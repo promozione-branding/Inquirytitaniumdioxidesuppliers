@@ -1,3 +1,5 @@
+"use client";
+import { handleCallClick } from "@/lib/track";
 import Image from "next/image";
 import React from "react";
 
@@ -77,10 +79,10 @@ const Footer = () => {
               <a href="mailto:info@aanyaenterprise.com" className="block hover:text-yellow-400">
                 info@aanyaenterprise.com
               </a>
-              <a href="tel:+918527557778" className="block hover:text-yellow-400">
+              <a onClick={handleCallClick} href="tel:+918527557778" className="block hover:text-yellow-400">
                 +91-85275 57778
               </a>
-              <a href="tel:+918920109583" className="block hover:text-yellow-400">
+              <a onClick={handleCallClick} href="tel:+918920109583" className="block hover:text-yellow-400">
                 +91-89201 09583
               </a>
             </p>

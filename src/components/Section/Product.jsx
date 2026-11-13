@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import { Dialog, DialogContent, DialogTrigger } from "../ui/dialog";
 import Image from 'next/image';
 import Popup2 from '../Layout/Popup2';
+import { handleWhatsappClick } from '@/lib/track';
 
 export default function Product() {
 
@@ -43,6 +44,7 @@ export default function Product() {
               rel="noopener noreferrer"
               onClick={(e) => {
                 e.stopPropagation();
+                handleWhatsappClick();
               }}  href="https://wa.me/8527557778" className="bg-[#FFCC2E] px-5 py-2 rounded-md font-medium hover:bg-yellow-400 transition">
                                     Get Best Price
                                 </a>
@@ -56,7 +58,7 @@ export default function Product() {
             <div className="flex justify-center mt-4">
                 <Dialog>
                    
-                        <a  href="https://wa.me/8527557778" className="bg-yellow-500 px-5 py-2 rounded-md font-medium hover:bg-yellow-600 text-black transition">
+                        <a  onClick={handleWhatsappClick}  href="https://wa.me/8527557778" className="bg-yellow-500 px-5 py-2 rounded-md font-medium hover:bg-yellow-600 text-black transition">
                             Get Free Quote & Sample
                         </a>
                     

@@ -1,3 +1,5 @@
+"use client";
+import { handleWhatsappClick } from "@/lib/track";
 import Image from "next/image";
 import React from "react";
 
@@ -6,7 +8,7 @@ const Whatsapp = () => {
     <>
       <a
         href="https://wa.me/8527557778"
-        
+        onClick={()=>{handleWhatsappClick()}}
         className="fixed bottom-7 right-7 z-20"
       >
         <Image
