@@ -19,7 +19,7 @@ const Form = () => {
 
     try {
       const formData = {
-        platform: "Titanium Dioxide Supplier Landing page",
+        platform: "inquiry.titaniumdioxidesuppliers.com",
         supplierToken: "6a19599b79a7cd6dff26a4c5",
         platformEmail: "sales@aanyaenterprise.com",
         name,
@@ -186,13 +186,12 @@ const Form = () => {
 
         {status && (
           <p
-            className={`text-center mt-4 text-sm font-medium p-3 rounded-lg ${
-              status.startsWith("✅")
+            className={`text-center mt-4 text-sm font-medium p-3 rounded-lg ${status.startsWith("✅")
                 ? "bg-green-100 text-green-800"
                 : status.startsWith("❌")
                   ? "bg-red-100 text-red-800"
                   : "bg-yellow-100 text-yellow-800"
-            }`}
+              }`}
           >
             {status}
           </p>

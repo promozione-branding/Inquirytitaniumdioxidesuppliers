@@ -3,8 +3,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-export default function Popup2({setOpen}) {
-//   const [open, setOpen] = useState(false);
+export default function Popup2({ setOpen }) {
+  //   const [open, setOpen] = useState(false);
   const [status, setStatus] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -13,9 +13,9 @@ export default function Popup2({setOpen}) {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
- 
 
-    
+
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -25,8 +25,8 @@ export default function Popup2({setOpen}) {
 
     try {
       const formData = {
-        platform: "Titanium Dioxide Supplier Landing page",
-         supplierToken: "6a19599b79a7cd6dff26a4c5",
+        platform: "inquiry.titaniumdioxidesuppliers.com",
+        supplierToken: "6a19599b79a7cd6dff26a4c5",
         platformEmail: "sales@aanyaenterprise.com",
         name,
         phone,
@@ -164,13 +164,12 @@ Contact: ${phone}`;
 
               {status && (
                 <div
-                  className={`mt-4 p-3 rounded-lg text-center font-medium ${
-                    status.startsWith("✅")
+                  className={`mt-4 p-3 rounded-lg text-center font-medium ${status.startsWith("✅")
                       ? "bg-green-100 text-green-700"
                       : status.startsWith("❌")
-                      ? "bg-red-100 text-red-700"
-                      : "bg-yellow-100 text-yellow-700"
-                  }`}
+                        ? "bg-red-100 text-red-700"
+                        : "bg-yellow-100 text-yellow-700"
+                    }`}
                 >
                   {status}
                 </div>
